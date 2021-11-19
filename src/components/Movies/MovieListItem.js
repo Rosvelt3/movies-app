@@ -79,7 +79,7 @@ const MovieListItem = ({ movie, auth }) => {
           <Modal handleClose={() => { setTrailerModal(false) }}>
             <div className="form-group">
               <iframe width="100%" height="400" title="Trailer de pelicula"
-                src="https://www.youtube.com/embed/4SiiRx7GDzI">
+                src={movie.trailer}>
               </iframe>
             </div>
           </Modal>
